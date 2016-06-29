@@ -36,8 +36,16 @@ public class TermCounter {
 	 * @return
 	 */
 	public int size() {
-        // TODO: fill this in.
-		return -1;
+		// count of total amount of terms
+		int totalCount = 0;
+		// go through the map and get all of the counts
+		// maps are interable
+		for (Integer currCount : map.values()) {
+			// add each terms count to the total count
+			totalCount += currCount;
+		}
+		// return the total count
+		return totalCount;
 	}
 
 	/**
